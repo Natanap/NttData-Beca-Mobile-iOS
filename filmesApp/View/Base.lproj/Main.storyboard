@@ -10,13 +10,16 @@
         <!--Navigation Controller-->
         <scene sceneID="8Pv-Rz-8HE">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vi5-tt-kXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="aFw-3j-1AY" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lta-31-g81">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IBR-4d-hrs"/>
+                    </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vi5-tt-kXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-899" y="68"/>
         </scene>
@@ -29,6 +32,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Omb-Wt-0N9"/>
+                    <connections>
+                        <outlet property="filmeTableView" destination="VRZ-3E-LIX" id="B4N-fX-hei"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
