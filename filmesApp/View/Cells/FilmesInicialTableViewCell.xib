@@ -62,6 +62,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="galeriaFilmesImageView" destination="dke-PN-Geu" id="CQz-Sl-vQx"/>
+                <outlet property="galeriaFilmesImageView2" destination="Sww-ij-XD0" id="mVj-gm-XN3"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
         </tableViewCell>
     </objects>

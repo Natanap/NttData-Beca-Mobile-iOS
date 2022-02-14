@@ -8,7 +8,13 @@
 import UIKit
 
 class FilmesInicialTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var galeriaFilmesImageView: UIImageView!
+    
+    @IBOutlet weak var galeriaFilmesImageView2: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
