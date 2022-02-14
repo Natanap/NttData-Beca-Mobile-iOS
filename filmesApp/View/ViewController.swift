@@ -12,11 +12,20 @@ class ViewController: UIViewController , UITableViewDataSource {
     //MARK: - IBOutlets
     
     
-    @IBOutlet var filmeTableView: UITableView!
+    @IBOutlet weak var filmesTableView: UITableView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filmeTableView.dataSource = self
+        configuraTableView()
+        
+    }
+    
+    func configuraTableView(){
+        filmesTableView.register(UINib(nibName: "FilmesInicialTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmesInicialTableViewCell")
+        filmesTableView.dataSource = self
+        filmesTableView.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,11 +33,11 @@ class ViewController: UIViewController , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        
-        cell.textLabel?.text = "filme \(indexPath.row)"
+        guard let celulaFilme = tableView.dequeueReusableCell(withIdentifier: "FilmesInicialTableViewCell") as? FilmesInicialTableViewCell else {
+            fatalError("error")
+        }
 
-        return cell
+        return celulaFilme
     }
     
 }
@@ -36,6 +45,18 @@ class ViewController: UIViewController , UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        
-        let headerView = 
+        let headerView = Bundle.main.loadNibNamed("InicioTableViewHeader", owner: self, options: nil)?.first as? InicioTableViewHeader
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220
     }
 }
+
+
