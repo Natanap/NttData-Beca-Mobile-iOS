@@ -16,19 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kwr-al-QpE" userLabel="filmes Table View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kwr-al-QpE" userLabel="filmes Table View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="separatorColor" systemColor="systemIndigoColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="era-kQ-Vs3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kwr-al-QpE" firstAttribute="top" secondItem="V1S-9b-Pfn" secondAttribute="top" id="3k5-JC-yk9"/>
-                            <constraint firstItem="Kwr-al-QpE" firstAttribute="trailing" secondItem="era-kQ-Vs3" secondAttribute="trailing" id="EL6-fz-JLs"/>
-                            <constraint firstAttribute="bottom" secondItem="Kwr-al-QpE" secondAttribute="bottom" id="Lar-ni-g1P"/>
-                            <constraint firstItem="Kwr-al-QpE" firstAttribute="leading" secondItem="era-kQ-Vs3" secondAttribute="leading" id="o3I-Tv-4RU"/>
+                            <constraint firstAttribute="bottom" secondItem="Kwr-al-QpE" secondAttribute="bottom" id="Ts5-PS-W9O"/>
+                            <constraint firstItem="Kwr-al-QpE" firstAttribute="top" secondItem="era-kQ-Vs3" secondAttribute="top" id="ZFq-WP-FrW"/>
+                            <constraint firstItem="Kwr-al-QpE" firstAttribute="trailing" secondItem="era-kQ-Vs3" secondAttribute="trailing" id="pl9-JD-W7Z"/>
+                            <constraint firstItem="Kwr-al-QpE" firstAttribute="leading" secondItem="era-kQ-Vs3" secondAttribute="leading" id="tGD-F9-uJE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -43,9 +42,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

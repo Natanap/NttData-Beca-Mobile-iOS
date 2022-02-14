@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="z3O-bq-Qqd">
-                        <rect key="frame" x="0.0" y="6" width="320" height="208"/>
+                        <rect key="frame" x="0.0" y="10" width="320" height="204"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-N6-dGH">
-                                <rect key="frame" x="0.0" y="0.0" width="158.5" height="208"/>
+                                <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="santiago-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="dke-PN-Geu">
-                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="208"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,10 +36,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIq-cg-sB4">
-                                <rect key="frame" x="161.5" y="0.0" width="158.5" height="208"/>
+                                <rect key="frame" x="161.5" y="0.0" width="158.5" height="204"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="santiago-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-ij-XD0">
-                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="208"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,7 +57,7 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="z3O-bq-Qqd" secondAttribute="bottom" constant="6" id="JVx-Bk-Tg1"/>
                     <constraint firstAttribute="trailing" secondItem="z3O-bq-Qqd" secondAttribute="trailing" id="Jdc-7I-iUl"/>
-                    <constraint firstItem="z3O-bq-Qqd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Oyy-hF-xax"/>
+                    <constraint firstItem="z3O-bq-Qqd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Oyy-hF-xax"/>
                     <constraint firstItem="z3O-bq-Qqd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ycf-fL-Kms"/>
                 </constraints>
             </tableViewCellContentView>

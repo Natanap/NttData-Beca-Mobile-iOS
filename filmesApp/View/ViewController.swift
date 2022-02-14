@@ -44,18 +44,18 @@ class ViewController: UIViewController , UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-       
+
         let headerView = Bundle.main.loadNibNamed("InicioTableViewHeader", owner: self, options: nil)?.first as? InicioTableViewHeader
-        
+
         return headerView
     }
-    
+
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 80
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 220
+        return 300
     }
 }
 
