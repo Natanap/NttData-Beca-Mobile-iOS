@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import Foundation
 
 class ViewController: UIViewController , UITableViewDataSource {
     
@@ -31,18 +33,20 @@ class ViewController: UIViewController , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let celulaFilme = tableView.dequeueReusableCell(withIdentifier: "FilmesInicialTableViewCell") as? FilmesInicialTableViewCell else {
             fatalError("error")
+            
         }
-
-        return celulaFilme
+            return celulaFilme
     }
     
+
 }
 
 extension ViewController: UITableViewDelegate {
+    
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
         let headerView = Bundle.main.loadNibNamed("InicioTableViewHeader", owner: self, options: nil)?.first as? InicioTableViewHeader
@@ -58,5 +62,4 @@ extension ViewController: UITableViewDelegate {
         return 300
     }
 }
-
 
