@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G415" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ResponseModel" representedClassName="ResponseModel" syncable="YES">
+        <attribute name="page" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="results" optional="YES" attributeType="String"/>
+        <attribute name="totalPages" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalResults" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+    </entity>
+    <elements>
+        <element name="ResponseModel" positionX="-63" positionY="-18" width="128" height="89"/>
+    </elements>
+</model>

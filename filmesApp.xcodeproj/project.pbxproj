@@ -22,6 +22,7 @@
 		2CF6563827BAEAFB009B034A /* FilmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF6563727BAEAFB009B034A /* FilmeModel.swift */; };
 		2CF9B98727BBEF5E00CCF3EE /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9B98527BBEF5E00CCF3EE /* DetalheViewController.swift */; };
 		2CF9B98827BBEF5E00CCF3EE /* DetalheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9B98627BBEF5E00CCF3EE /* DetalheViewController.xib */; };
+		2CF9B99027BC2D2A00CCF3EE /* FilmeData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9B98E27BC2D2A00CCF3EE /* FilmeData.xcdatamodeld */; };
 		BEB179C8FC72274C19D0EEE4 /* Pods_filmesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C5D20956EFAFA316130E5A /* Pods_filmesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		2CF6563727BAEAFB009B034A /* FilmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeModel.swift; sourceTree = "<group>"; };
 		2CF9B98527BBEF5E00CCF3EE /* DetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
 		2CF9B98627BBEF5E00CCF3EE /* DetalheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheViewController.xib; sourceTree = "<group>"; };
+		2CF9B98F27BC2D2A00CCF3EE /* FilmeData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FilmeData.xcdatamodel; sourceTree = "<group>"; };
 		51C5D20956EFAFA316130E5A /* Pods_filmesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_filmesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA55EB405262D8557AFF56F4 /* Pods-filmesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filmesApp.debug.xcconfig"; path = "Target Support Files/Pods-filmesApp/Pods-filmesApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FBB5BCF1418F61A84D321333 /* Pods-filmesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filmesApp.release.xcconfig"; path = "Target Support Files/Pods-filmesApp/Pods-filmesApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,7 +83,6 @@
 		2C35A44927B9AE6D00D07D20 /* filmesApp */ = {
 			isa = PBXGroup;
 			children = (
-				2CF9B98427BBEF2900CCF3EE /* DetalheViewController */,
 				2C35A45F27B9B09900D07D20 /* Model */,
 				2C35A46027B9B0A200D07D20 /* View */,
 				2CF9B98127BBDC1C00CCF3EE /* Header */,
@@ -90,6 +91,7 @@
 				2C35A45327B9AE6F00D07D20 /* Assets.xcassets */,
 				2C35A45527B9AE6F00D07D20 /* LaunchScreen.storyboard */,
 				2C35A45827B9AE6F00D07D20 /* Info.plist */,
+				2CF9B98E27BC2D2A00CCF3EE /* FilmeData.xcdatamodeld */,
 			);
 			path = filmesApp;
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 				2C35A46527B9D72300D07D20 /* Cells */,
 				2C35A45027B9AE6D00D07D20 /* Main.storyboard */,
 				2C35A44E27B9AE6D00D07D20 /* ViewController.swift */,
+				2CF9B98427BBEF2900CCF3EE /* DetalheViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				2C35A46427B9BD7900D07D20 /* InicioTableViewHeader.swift in Sources */,
 				2CF6562F27BA9E07009B034A /* FilmesAPI.swift in Sources */,
 				2C35A46827B9D77E00D07D20 /* FilmesInicialTableViewCell.swift in Sources */,
+				2CF9B99027BC2D2A00CCF3EE /* FilmeData.xcdatamodeld in Sources */,
 				2CF9B98727BBEF5E00CCF3EE /* DetalheViewController.swift in Sources */,
 				2CF6563627BAE65A009B034A /* ResponseModel.swift in Sources */,
 				2C35A44B27B9AE6D00D07D20 /* AppDelegate.swift in Sources */,
@@ -528,6 +532,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2CF9B98E27BC2D2A00CCF3EE /* FilmeData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2CF9B98F27BC2D2A00CCF3EE /* FilmeData.xcdatamodel */,
+			);
+			currentVersion = 2CF9B98F27BC2D2A00CCF3EE /* FilmeData.xcdatamodel */;
+			path = FilmeData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2C35A43F27B9AE6D00D07D20 /* Project object */;
 }
