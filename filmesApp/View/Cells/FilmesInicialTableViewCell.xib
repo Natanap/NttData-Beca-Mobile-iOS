@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-N6-dGH">
                                 <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="santiago-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="dke-PN-Geu" customClass="Filme">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="santiago-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="dke-PN-Geu">
                                         <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
                                     </imageView>
                                 </subviews>
@@ -62,9 +62,6 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <connections>
-                <outlet property="imagemDoFilme" destination="dke-PN-Geu" id="XPv-Pg-wgE"/>
-            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
         </tableViewCell>
     </objects>

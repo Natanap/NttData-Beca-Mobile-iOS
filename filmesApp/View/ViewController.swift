@@ -21,8 +21,8 @@ class ViewController: UIViewController , UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraTableView()
-        
     }
+    
     
     func configuraTableView(){
         filmesTableView.register(UINib(nibName: "FilmesInicialTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmesInicialTableViewCell")
@@ -46,6 +46,11 @@ class ViewController: UIViewController , UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detalheController = DetalheViewController(nibName: "DetalheViewController", bundle: nil)
+
+        navigationController?.pushViewController(detalheController, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
@@ -55,7 +60,7 @@ extension ViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 80
+        return 120
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

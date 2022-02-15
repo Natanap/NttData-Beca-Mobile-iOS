@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bhC-KC-rTi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XFq-E9-oWE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="195-K6-7rE">
+            <objects>
+                <navigationController id="XFq-E9-oWE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dmE-af-oN0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bhC-KC-rTi" kind="relationship" relationship="rootViewController" id="oKM-b7-HTy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBy-gi-wF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1226" y="80"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="wAL-lL-g6d">
             <objects>
@@ -17,26 +33,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kwr-al-QpE" userLabel="filmes Table View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="era-kQ-Vs3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Kwr-al-QpE" secondAttribute="bottom" id="Ts5-PS-W9O"/>
-                            <constraint firstItem="Kwr-al-QpE" firstAttribute="top" secondItem="era-kQ-Vs3" secondAttribute="top" id="ZFq-WP-FrW"/>
-                            <constraint firstItem="Kwr-al-QpE" firstAttribute="trailing" secondItem="era-kQ-Vs3" secondAttribute="trailing" id="pl9-JD-W7Z"/>
-                            <constraint firstItem="Kwr-al-QpE" firstAttribute="leading" secondItem="era-kQ-Vs3" secondAttribute="leading" id="tGD-F9-uJE"/>
+                            <constraint firstAttribute="bottom" secondItem="Kwr-al-QpE" secondAttribute="bottom" id="JsR-66-PTS"/>
+                            <constraint firstItem="Kwr-al-QpE" firstAttribute="trailing" secondItem="era-kQ-Vs3" secondAttribute="trailing" id="YE2-oI-XxE"/>
+                            <constraint firstItem="Kwr-al-QpE" firstAttribute="leading" secondItem="era-kQ-Vs3" secondAttribute="leading" id="dhO-bT-zcc"/>
+                            <constraint firstItem="Kwr-al-QpE" firstAttribute="top" secondItem="V1S-9b-Pfn" secondAttribute="top" id="sn4-QH-ChD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZHt-5Z-Xrg"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="filmesTableView" destination="Kwr-al-QpE" id="UO2-OS-8DJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39x-7T-j1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-355.07246376811599" y="82.366071428571431"/>
+            <point key="canvasLocation" x="-356.52173913043481" y="81.026785714285708"/>
         </scene>
     </scenes>
     <resources>

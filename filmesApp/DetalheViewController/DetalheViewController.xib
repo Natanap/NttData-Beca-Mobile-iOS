@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="filmesApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="silviu-beniamin-tofan-LCIWUkPvcak-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Ugf-c3-MUf">
+                    <rect key="frame" x="0.0" y="49" width="414" height="797"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="bk4-fD-G5j">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sj4-Jz-bfb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="467"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9So-qw-SgV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="467"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Capa_Harry_Potter_e_o_Cálice_de_Fogo_(filme)" translatesAutoresizingMaskIntoConstraints="NO" id="ZDx-ob-f3Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="467"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="467" id="dEw-PY-P7J"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Sj4-Jz-bfb" secondAttribute="bottom" id="22Z-pM-Hae"/>
+                        <constraint firstAttribute="trailing" secondItem="Sj4-Jz-bfb" secondAttribute="trailing" id="2jr-bm-uyI"/>
+                        <constraint firstItem="Sj4-Jz-bfb" firstAttribute="top" secondItem="bk4-fD-G5j" secondAttribute="top" id="Dzi-NM-s0m"/>
+                        <constraint firstItem="Sj4-Jz-bfb" firstAttribute="leading" secondItem="bk4-fD-G5j" secondAttribute="leading" id="MkD-Zb-odd"/>
+                        <constraint firstItem="Sj4-Jz-bfb" firstAttribute="width" secondItem="bk4-fD-G5j" secondAttribute="width" id="Oks-C9-k4B"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="bk4-fD-G5j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WKq-Ga-D9R"/>
+                <constraint firstItem="bk4-fD-G5j" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Xgn-xJ-zyn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bk4-fD-G5j" secondAttribute="trailing" id="hih-o0-tBD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bk4-fD-G5j" secondAttribute="bottom" id="qR0-Sx-HBJ"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Capa_Harry_Potter_e_o_Cálice_de_Fogo_(filme)" width="544" height="800"/>
+        <image name="silviu-beniamin-tofan-LCIWUkPvcak-unsplash" width="2624" height="3936"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

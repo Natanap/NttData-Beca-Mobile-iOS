@@ -8,15 +8,15 @@
 import UIKit
 import AlamofireImage
 
-class FilmesInicialTableViewCell: UIView {
+class FilmesInicialTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var imagemDoFilme: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
     
-    func configuraView() {
-//        guard let imageUrl = URL(string: "[Any].Type.Type" ) else { return }
-//            imageView.af_setImage(withURL: URL)
-        }
-    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
 }
 
 
