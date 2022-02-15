@@ -11,10 +11,12 @@ import UIKit
 
 class FilmesAPI{
 
-    public func getRequest(url: String,
+    let url = "https://api.themoviedb.org/3/movie/popular?api_key=b11f9bc81c43be98fb8a1155d4efcced&language=pt-BR&page=1."
+    
+     func getRequest(url: String,
                      completion: @escaping ([String: Any]?, Error?) -> Void){
         //URL válida
-        guard let URL = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=b11f9bc81c43be98fb8a1155d4efcced&language=pt-BR&page=1.") else {
+        guard let URL = URL(string: url) else {
             completion(nil, nil)
             return
         }
@@ -53,20 +55,6 @@ class FilmesAPI{
         task.resume()
         
     }
-
-
-    //Coloque a URL da sua API aqui
-    //var url = "https://api.themoviedb.org/3/movie/popular?api_key=b11f9bc81c43be98fb8a1155d4efcced&language=pt-BR&page=1."
-
+    
 }
-//    //Chamando a funcão GET
-//    func getRequest(url: url){
-//        (resultado, erro);  in
-//          if(resultado != nil) {
-//              //O resultado aqui vem como Opcional
-//              print("Sua requisicao foi realizada com sucesso: \n \(resultado)")
-//          } else {
-//              print("A requisicao nao funcionou \(erro)")
-//          }
-//
-//    }
+ 

@@ -21,6 +21,19 @@ class ViewController: UIViewController , UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraTableView()
+        func getRequest(_ url: URL){
+            
+              let resultado = ""
+            
+              if(resultado != nil) {
+                  //O resultado aqui vem como Opcional
+                  print("Sua requisicao foi realizada com sucesso: \n \(resultado)")
+              } else {
+                  print("A requisicao nao funcionou")
+              }
+
+        }
+        
     }
     
     
@@ -28,6 +41,8 @@ class ViewController: UIViewController , UITableViewDataSource {
         filmesTableView.register(UINib(nibName: "FilmesInicialTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmesInicialTableViewCell")
         filmesTableView.dataSource = self
         filmesTableView.delegate = self
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,6 +66,7 @@ extension ViewController: UITableViewDelegate {
 
         navigationController?.pushViewController(detalheController, animated: true)
     }
+    
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
