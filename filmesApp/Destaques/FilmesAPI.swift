@@ -8,23 +8,28 @@
 import Foundation
 import AlamofireImage
 import Alamofire
+import UIKit
 
-class FilmesAPI: NSObject{
-    let API_KEY = "b11f9bc81c43be98fb8a1155d4efcced"
+class FilmesAPI: UIImage {
+    
+    let url = "https://api.themoviedb.org/3/movie/popular?api_key=b11f9bc81c43be98fb8a1155d4efcced&language=pt-BR&page=1."
 
-func recuperaFilmes() {
-    Alamofire.request("https://api.themoviedb.org/3/trending/movie/week?api_key=b11f9bc81c43be98fb8a1155d4efcced&language=pt-BR", method: .get).responseJSON { (response) in
-        switch response.result {
-        case.success:
-            
-            break
-            
-        case .failure:
-            print(response.error!)
-            break
+    func getRequest(url: String,
+                     completion: @escaping ([String: Any]?, Error?) -> Void){
+        //URL válida
+        guard let URL = URL(string: url) else {
+            completion(nil, nil)
+            return
         }
-        
+//        let request = AF.request("https://api.themoviedb.org/3/movie/popular?api_key=b11f9bc81c43be98fb8a1155d4efcced&language=pt-BR&page=1.", method: .get).responseData { response in
+//            print(response)
+//            do {
+//                let data: ResponseModel = try JSONDecoder().decode(ResponseModel.self, from: response)
+//                // Do something
+//            } catch {
+//                print("error")
+//            }
+//        }
         
     }
-  }
 }

@@ -6,24 +6,17 @@
 //
 
 import UIKit
+import AlamofireImage
 
-class FilmesInicialTableViewCell: UITableViewCell {
+class FilmesInicialTableViewCell: UIView {
     
+    @IBOutlet weak var imagemDoFilme: UIImageView!
     
-    @IBOutlet weak var galeriaFilmesImageView: UIImageView!
-    
-    @IBOutlet weak var galeriaFilmesImageView2: UIImageView!
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    func configuraView() {
+//        guard let imageUrl = URL(string: "[Any].Type.Type" ) else { return }
+//            imageView.af_setImage(withURL: URL)
+        }
     
 }
+
+
