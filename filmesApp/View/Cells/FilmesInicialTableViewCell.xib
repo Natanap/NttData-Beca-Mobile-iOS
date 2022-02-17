@@ -45,7 +45,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano:" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITY-9E-CXx">
-                                        <rect key="frame" x="8" y="61" width="61" height="22"/>
+                                        <rect key="frame" x="8" y="41.5" width="61" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="XDv-sj-YtX"/>
                                             <constraint firstAttribute="width" constant="61" id="tpi-qB-dpH"/>
@@ -60,25 +60,32 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver Descrição" lineBreakMode="headTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHk-gb-w80">
-                                        <rect key="frame" x="7" y="91" width="143" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="10" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHk-gb-w80">
+                                        <rect key="frame" x="7" y="71.5" width="142.5" height="120"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="gHH-OO-Gwl"/>
+                                            <constraint firstAttribute="height" constant="120" id="b2v-6a-MOS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Ver Descrição">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" metaFont="smallSystem"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="8o3-E3-4vh" secondAttribute="bottom" constant="12.5" id="6Sy-gn-2pc"/>
-                                    <constraint firstItem="ITY-9E-CXx" firstAttribute="top" secondItem="0nR-97-WRU" secondAttribute="bottom" constant="29.5" id="7yh-F9-ofJ"/>
+                                    <constraint firstItem="ITY-9E-CXx" firstAttribute="top" secondItem="0nR-97-WRU" secondAttribute="bottom" constant="10" id="7yh-F9-ofJ"/>
                                     <constraint firstItem="8o3-E3-4vh" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="8" id="B22-mH-kYd"/>
                                     <constraint firstItem="QHk-gb-w80" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="7" id="Hq3-4m-H5m"/>
                                     <constraint firstItem="0nR-97-WRU" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="9" id="QAN-Jb-3GI"/>
                                     <constraint firstItem="QHk-gb-w80" firstAttribute="top" secondItem="ITY-9E-CXx" secondAttribute="bottom" constant="8" symbolic="YES" id="RDH-ED-mSp"/>
-                                    <constraint firstAttribute="trailing" secondItem="QHk-gb-w80" secondAttribute="trailing" constant="8.5" id="YFp-WA-IVW"/>
+                                    <constraint firstAttribute="trailing" secondItem="QHk-gb-w80" secondAttribute="trailing" constant="9" id="YFp-WA-IVW"/>
                                     <constraint firstAttribute="trailing" secondItem="0nR-97-WRU" secondAttribute="trailing" constant="7.5" id="YoB-TB-o8d"/>
                                     <constraint firstItem="0nR-97-WRU" firstAttribute="top" secondItem="LIq-cg-sB4" secondAttribute="top" constant="11" id="l4F-T7-FaS"/>
                                     <constraint firstItem="ITY-9E-CXx" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="8" id="sSU-QY-DA8"/>

@@ -12,10 +12,13 @@
         <scene sceneID="195-K6-7rE">
             <objects>
                 <navigationController id="XFq-E9-oWE" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dmE-af-oN0">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleAspectFill" barStyle="black" translucent="NO" id="dmE-af-oN0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K7S-d1-Y3J">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="bhC-KC-rTi" kind="relationship" relationship="rootViewController" id="oKM-b7-HTy"/>
                     </connections>
