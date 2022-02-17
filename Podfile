@@ -6,6 +6,6 @@ target 'filmesApp' do
   use_frameworks!
   
   pod 'Alamofire', '~> 5.5'
-  pod  'AlamofireImage' ,  '~> 4.1'
+  pod 'AlamofireImage' ,  '~> 4.1'
 
 end

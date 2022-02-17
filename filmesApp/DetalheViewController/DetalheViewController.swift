@@ -6,24 +6,22 @@
 //
 
 import UIKit
+import Foundation
+
 
 class DetalheViewController: UIViewController {
-
+   
+    var filmeSelecionado : Movie!
+    
+    //MARK: - IBOutlets
+    
+    @IBOutlet weak var tituloFilmeLabel: UILabel!
+    @IBOutlet weak var moviePoster: UIImageView!
+    @IBOutlet weak var voteLabel: UILabel!
+    @IBOutlet weak var descricaoLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
