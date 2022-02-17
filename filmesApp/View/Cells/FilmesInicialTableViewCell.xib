@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-N6-dGH">
                                 <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="santiago-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="dke-PN-Geu">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dke-PN-Geu">
                                         <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
                                     </imageView>
                                 </subviews>
@@ -38,22 +38,57 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIq-cg-sB4">
                                 <rect key="frame" x="161.5" y="0.0" width="158.5" height="204"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="santiago-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-ij-XD0">
-                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="204"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo:" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nR-97-WRU">
+                                        <rect key="frame" x="9" y="11" width="142" height="20.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano:" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITY-9E-CXx">
+                                        <rect key="frame" x="8" y="61" width="61" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="XDv-sj-YtX"/>
+                                            <constraint firstAttribute="width" constant="61" id="tpi-qB-dpH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Nota:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8o3-E3-4vh">
+                                        <rect key="frame" x="8" y="171" width="45.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver Descrição" lineBreakMode="headTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHk-gb-w80">
+                                        <rect key="frame" x="7" y="91" width="143" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="gHH-OO-Gwl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
-                                    <constraint firstItem="Sww-ij-XD0" firstAttribute="top" secondItem="LIq-cg-sB4" secondAttribute="top" id="0JP-tT-KVF"/>
-                                    <constraint firstAttribute="bottom" secondItem="Sww-ij-XD0" secondAttribute="bottom" id="HBj-CE-ncs"/>
-                                    <constraint firstItem="Sww-ij-XD0" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" id="twC-pI-LDj"/>
-                                    <constraint firstAttribute="trailing" secondItem="Sww-ij-XD0" secondAttribute="trailing" id="yAR-SD-aJm"/>
+                                    <constraint firstAttribute="bottom" secondItem="8o3-E3-4vh" secondAttribute="bottom" constant="12.5" id="6Sy-gn-2pc"/>
+                                    <constraint firstItem="ITY-9E-CXx" firstAttribute="top" secondItem="0nR-97-WRU" secondAttribute="bottom" constant="29.5" id="7yh-F9-ofJ"/>
+                                    <constraint firstItem="8o3-E3-4vh" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="8" id="B22-mH-kYd"/>
+                                    <constraint firstItem="QHk-gb-w80" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="7" id="Hq3-4m-H5m"/>
+                                    <constraint firstItem="0nR-97-WRU" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="9" id="QAN-Jb-3GI"/>
+                                    <constraint firstItem="QHk-gb-w80" firstAttribute="top" secondItem="ITY-9E-CXx" secondAttribute="bottom" constant="8" symbolic="YES" id="RDH-ED-mSp"/>
+                                    <constraint firstAttribute="trailing" secondItem="QHk-gb-w80" secondAttribute="trailing" constant="8.5" id="YFp-WA-IVW"/>
+                                    <constraint firstAttribute="trailing" secondItem="0nR-97-WRU" secondAttribute="trailing" constant="7.5" id="YoB-TB-o8d"/>
+                                    <constraint firstItem="0nR-97-WRU" firstAttribute="top" secondItem="LIq-cg-sB4" secondAttribute="top" constant="11" id="l4F-T7-FaS"/>
+                                    <constraint firstItem="ITY-9E-CXx" firstAttribute="leading" secondItem="LIq-cg-sB4" secondAttribute="leading" constant="8" id="sSU-QY-DA8"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemRedColor"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="z3O-bq-Qqd" secondAttribute="bottom" constant="6" id="JVx-Bk-Tg1"/>
                     <constraint firstAttribute="trailing" secondItem="z3O-bq-Qqd" secondAttribute="trailing" id="Jdc-7I-iUl"/>
@@ -62,13 +97,25 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
+            <connections>
+                <outlet property="movieOverview" destination="QHk-gb-w80" id="bx2-a3-CKz"/>
+                <outlet property="moviePoster" destination="dke-PN-Geu" id="Pr2-hh-Pij"/>
+                <outlet property="movieRate" destination="8o3-E3-4vh" id="Qgk-I6-khD"/>
+                <outlet property="movieTitle" destination="0nR-97-WRU" id="bLM-iM-QMC"/>
+                <outlet property="movieYear" destination="ITY-9E-CXx" id="PeY-Na-UiZ"/>
+            </connections>
+            <point key="canvasLocation" x="186.95652173913044" y="103.79464285714285"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="santiago-internacional" width="1280" height="729"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
